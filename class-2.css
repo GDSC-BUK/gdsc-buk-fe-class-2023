@@ -1,0 +1,29 @@
+/* styling with tag name selector */
+button {
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* styling with class name selector */
+.message {
+  background-color: aqua;
+  color: indigo;
+  padding: 12px;
+}
+
+/* padding: 12px; */
+/* padding: all-sides; */
+/* padding: 12px 9px; */
+/* padding: top-bottom right-left; */
+/* padding: 12px 5px 7px 9px; */
+/* padding: top right bottom left; */
+
+.sign-in-button {
+  background-color: #7367f0;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 120px;
+  font-weight: 500;
+}

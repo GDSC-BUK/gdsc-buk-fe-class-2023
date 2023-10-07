@@ -1,0 +1,6 @@
+CSS
+
+Methods of applying CSS to HTML
+- Inline CSS
+- Internal CSS
+- External CSS
