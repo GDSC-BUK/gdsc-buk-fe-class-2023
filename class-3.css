@@ -1,0 +1,150 @@
+/* css reset */
+/* The CSS code `*` is a universal selector that targets all elements on the page. The properties
+`padding: 0;`, `margin: 0;`, `border: none;`, and `outline: none;` are used to remove any default
+padding, margin, border, and outline from all elements. The property `font-family: Verdana, Geneva,
+Tahoma, sans-serif;` sets the font family for all elements to a list of fonts, with Verdana being
+the preferred font and the others being fallback options in case Verdana is not available. */
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* The `.container` class is defining the styling for a container element. It sets the width to 100% of
+its parent element, the height to 100% of the viewport height (100vh), and uses flexbox to
+horizontally align its child elements. */
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+/* The CSS code `.left-section, .right-section { width: 50%; height: 100%; }` is setting the width and
+height of elements with the classes "left-section" and "right-section". */
+.left-section,
+.right-section {
+  width: 50%;
+  height: 100%;
+}
+
+/* The `.left-section` class is defining the styling for a container element on the left side of the
+page. */
+.left-section {
+  background-image: url("./class-3-login-bg.jpeg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* The CSS code `.sub-intro, .intro, .intro-speech { color: #333; }` is setting the text color to
+`#333` (a shade of gray) for elements with the classes "sub-intro", "intro", and "intro-speech".
+This means that any text within elements with these classes will be displayed in the specified
+color. */
+.sub-intro,
+.intro,
+.intro-speech {
+  color: #333;
+}
+
+/* The CSS code `.sub-intro { font-size: 45px; }` is defining the styling for an element with the class
+"sub-intro". It sets the font size of the element to 45 pixels. */
+.sub-intro {
+  font-size: 45px;
+}
+
+/* The `.intro` class is defining the styling for a heading element with the class "intro". It sets the
+font size of the heading to 100 pixels. */
+.intro {
+  font-size: 100px;
+}
+
+/* The `.intro-speech` class is defining the styling for a container element that represents a speech
+or text content within the left section of the page. */
+.intro-speech {
+  width: 50%;
+  text-align: center;
+}
+
+/* The `.right-section` class is defining the styling for a container element on the right side of the
+page. It sets the background color to white and uses flexbox to horizontally and vertically center
+its child elements. */
+.right-section {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* The `.login-form` class is defining the styling for a container element that represents a login
+form. */
+.login-form {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/* The `.input-group` class is defining the styling for a container element that contains multiple
+child elements. */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* The CSS code `input` is targeting all `<input>` elements and applying the specified styles to them. */
+input {
+  background-color: rgb(249, 245, 245);
+  padding: 15px;
+}
+
+/* The `.form-header` class is defining the styling for a container element within the login form. It
+sets the display property to flex, which allows the child elements to be displayed in a column
+layout. The `flex-direction` property is set to column, which arranges the child elements
+vertically. The `justify-content` property is set to center, which horizontally centers the child
+elements within the container. The `align-items` property is also set to center, which vertically
+centers the child elements within the container. Finally, the `gap` property is set to 30px, which
+adds a vertical spacing of 30 pixels between the child elements. */
+.form-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+/* The `.form-title` class is defining the styling for a heading element within the login form. It sets
+the color of the text to `#333` (a shade of gray) and sets the font size to `40px`. */
+.form-title {
+  color: #333;
+  font-size: 40px;
+}
+
+/* The `.form-description` class is defining the styling for a paragraph element within the login form.
+It sets the text alignment to center and the color to a specific shade of gray (rgb(167, 150, 150)). */
+.form-description {
+  text-align: center;
+  color: rgb(167, 150, 150);
+}
+
+/* The `.form-footer` class is defining the styling for a container element that contains multiple
+child elements. */
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* The CSS code `button` is targeting the `<button>` element and applying various styles to it. */
+button {
+  padding: 15px;
+  border-radius: 25px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
