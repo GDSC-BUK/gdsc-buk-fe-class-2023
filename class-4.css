@@ -1,0 +1,43 @@
+/* default sizes for all screen */
+.boxes {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+}
+
+.box {
+    width: 100px;
+    height: 200px;
+    background-color: red;
+}
+
+/* large mobile - 425px */
+@media only screen and (max-width: 425px) {
+    .boxes {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+    }
+}
+
+/* tablet - 768px */
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    .box {
+        width: 100%;
+        background-color: blueviolet;
+    }
+}
+
+/* laptop - 2560px */
+@media only screen and (min-width: 769px) and (max-width: 2560px) {
+    .boxes {
+        justify-content: space-between;
+    }
+
+    .box {
+        height: 500px;
+        width: 500px;
+    }
+}
