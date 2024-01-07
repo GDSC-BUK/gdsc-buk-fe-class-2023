@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 6: Semantic HTML</title>
+
+    <link rel="stylesheet" href="./class-6.css">
+</head>
+<body>
+    <!--
+        Semantic HTML is the approach of using HTML elements/tags the way they are meant to be used
+
+        reference: https://developer.mozilla.org/en-US/docs/Glossary/Semantics
+    -->
+
+    <!-- ✅ Semantic Usage of a button -->
+    <button class="btn">Click Me</button>
+    
+    <!-- ❌ Non-Semantic Usage of a button -->
+    <label class="btn">Click Me</label>
+    
+    
+    <!-- ✅ Semantic Usage of a form -->
+    <form class="login-form">
+        <input placeholder="username" />
+        
+        <input placeholder="password" />
+        
+        <button>Login</button>
+    </form>
+    
+    <!-- ❌ Non-Semantic Usage of a form -->
+    <div class="login-form">
+        <input placeholder="username" />
+        
+        <input placeholder="password" />
+        
+        <button>Login</button>
+    </div>
+    
+    
+    <!-- ✅ Semantic Usage of a navbar -->
+    <nav class="navbar">
+        <a href="#">GDSC</a>
+        
+        <!-- semantic way of listing items in HTML -->
+        <ol class="navbar-items">
+            <li class="navbar-item">
+                <a href="#">Login</a>
+            </li>
+            <li class="navbar-item">
+                <a href="#">Register</a>
+            </li>
+        </ol>
+    </nav>
+
+    <!-- ❌ Non-Semantic Usage of a nav -->
+    <div class="navbar">
+        <a href="#">GDSC</a>
+        
+        <!-- non-semantic way of listing items in HTML -->
+        <div class="navbar-items">
+            <span class="navbar-item">
+                <a href="#">Login</a>
+            </span>
+            <span class="navbar-item">
+                <a href="#">Register</a>
+            </span>
+        </div>
+    </div>
+</body>
+</html>
